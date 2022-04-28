@@ -20,6 +20,11 @@ body {
 
 h1 {
   font-size: 4em;
+  margin: 25px;
+  height: 50px;
+  background: teal;
+  padding: 50px;
+  text-align: center;
 }
 
 h2 {
@@ -72,17 +77,4 @@ p.chr{
   height: 100px;
   background: teal;
   padding: 20px;
-}
-h2.my{
- margin: 25px;
- height: 50px;
- background: teal;
- padding: 50px;
- text-align: center;
-}
-p,ul{
-  line-height:  25px;
-}
-h2{
-  line-height: 60px;
 }
