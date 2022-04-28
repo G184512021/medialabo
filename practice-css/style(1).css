@@ -80,3 +80,9 @@ h2.my{
  padding: 50px;
  text-align: center;
 }
+p,ul{
+  line-height:  25px;
+}
+h2{
+  line-height: 60px;
+}
