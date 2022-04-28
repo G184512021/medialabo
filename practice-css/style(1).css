@@ -8,7 +8,7 @@ html {
   background: teal;
   padding: 50px;
 }
-}
+
 
 body {
   padding:10px;
@@ -35,7 +35,7 @@ pli {
 /* header and footer */
 
 header, footer {
-  background-colour: teal;
+  background: teal;
   height: 10em;
   padding: 2em;
 }
@@ -64,10 +64,10 @@ img {
 
 }
 img.src{
-  float:right
+  float:right;
   margin: 30px;
 }
-p.1978{
+p.chr{
   margin: 20px;
   height: 100px;
   background: teal;
