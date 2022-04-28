@@ -73,10 +73,10 @@ p.1978{
   background: teal;
   padding: 20px;
 }
-.my{
-margin: 25px;
-height: 50px;
-background: teal;
-padding: 50px;
-text-align: center;
+h2.my{
+ margin: 25px;
+ height: 50px;
+ background: teal;
+ padding: 50px;
+ text-align: center;
 }
