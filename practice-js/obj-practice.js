@@ -21,5 +21,5 @@ for (let n of campus.buildingD){
 	console.log(n);
 }
 for(let m of gakka){
-	console.log(m);
+	console.log(m.name);
 }
