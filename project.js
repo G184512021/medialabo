@@ -189,5 +189,8 @@ let data = {
   
   /////////// 課題3-2 ここからプログラムを書こう
 for(let n of data.results.shop){
+  let pre = (n.name);
   console.log(n.name);
+  let s = document.querySelector('span#pre');
+  s.textContent = pre;
 }
