@@ -12,7 +12,7 @@ function sendRequest() {
 	// URL を設定
 
 
-	let url = 'https://www.nishita-lab.org/web-contents/jsons/hotpepper/' + genre + '.json';
+	let url = 'https://www.nishita-lab.org/web-contents/jsons/openweather/'+genre+'.json';
 
 	// 通信開始
 	axios.get(url)
