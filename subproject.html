@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="subproject.js" defer></script>
+    <link rel="stylesheet" href="subproject.css">
+    <meta charset="utf-8">
+    <title>世界の天気</title>
+    </head>
+    <p>各都市の天気に関する情報を検索できます</p>
+    <label for="genre">検索: </label>
+    <input type="text" name="genre" id="genre" size="15">
+    <button id="print">表示</button>
+    <p><h2>都市のIDの取りうる値:</h2></p>
+    <p><h3>（検索したい都市に合わせて以下の番号を入力してください）</h3></p>
+
+    <p>360630 ... Cairo カイロ （エジプト）</p>
+    <p>524901 ... Moscow モスクワ （ロシア）</p>
+    <p>993800 ... Johannesburg ヨハネスブルク （南アフリカ）</p>
+    <p>1816670 ... Beijing 北京 （中華人民共和国）</p>
+    <p>1850147 ... Tokyo 東京 （日本）</p>
+    <p>1880252 ... Singapore シンガポール</p>
+    <p>2147714 ... Sydney シドニー （オーストラリア）</p>
+    <p>2643743 ... London ロンドン （イギリス）</p>
+    <p>2968815 ... Paris パリ （フランス）</p>
+    <p>3451189 ... Rio de Janeiro リオデジャネイロ （ブラジル）</p>
+    <p>5128581 ... New York ニューヨーク （アメリカ合衆国）</p>
+    <p>5368361 ... Los Angeles ロサンゼルス （アメリカ合衆国）</p>
+    <body>
+    <p><h2>検索結果: </h2></p>
+    <p>都市名</p>
+    <p><span id = "t"></span></p>
+    <p>緯度</p>
+    <p><span id = "i"></span></p>
+    <p>経度</p>
+    <p><span id = "k"></span></p>
+    <p>天気</p>
+    <p><span id = "tk"></span></p>
+    <p>最高気温</p>
+    <p><span id = "max"></span></p>
+    <p>最低気温</p>
+    <p><span id = "min"></span></p>
+    <p>湿度</p>
+    <p><span id = "s"></span></p>
+
+    </body>
+</html>
