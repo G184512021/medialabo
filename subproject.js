@@ -28,17 +28,17 @@ function showResult(resp) {
     let t = document.querySelector('span#t');
     t.textContent = data.name;
     let i =document.querySelector('span#i')
-    i.textContent= data.coord.lon+度;
+    i.textContent= data.coord.lon+"度";
     let k =document.querySelector('span#k')
-    k.textContent= data.coord.lat+度;
+    k.textContent= data.coord.lat+"度";
     let tk =document.querySelector('span#tk')
     tk.textContent= data.weather.description;
     let max =document.querySelector('span#max')
-    max.textContent= data.main.temp_max+℃;
+    max.textContent= data.main.temp_max+"度";
     let min =document.querySelector('span#min')
-    min.textContent= data.main.temp_min+℃;
+    min.textContent= data.main.temp_min+"度";
     let s =document.querySelector('span#s')
-    s.textContent= data.main.humidity+％;
+    s.textContent= data.main.humidity+"パーセント";
 }
 
 function showError(err) {
