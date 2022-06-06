@@ -42,6 +42,8 @@ function showResult(resp) {
 }
 
 function showError(err) {
+    let s =document.querySelector('span#s');
+    s.textContent = "入力された数値に該当する都市はありません"
 	console.log(err);
 }	
 
