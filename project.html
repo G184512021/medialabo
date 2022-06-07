@@ -2,54 +2,48 @@
 <html>
   <head>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="project.js" defer></script>
-    <link rel="stylesheet" href="project.css">
+    <script src="subproject.js" defer></script>
+    <link rel="stylesheet" href="subproject.css">
     <meta charset="utf-8">
-    <title>グルメ情報</title>
+    <title>世界の天気</title>
     </head>
-    <p>絞り込み</p>
+    <p><h1>各都市の天気に関する情報を検索できます</h1></p>
     <label for="genre">検索: </label>
     <input type="text" name="genre" id="genre" size="15">
     <button id="print">表示</button>
-    
-    <table>
-        <tr>
-            <td>項目名</td>
-            <td>項目の説明</td>
-        </tr>
-        <tr>
-            <td>access</td>
-            <td>アクセス情報</td>
-        </tr>
-        <tr>
-            <td>address</td>
-            <td>住所</td>
-        </tr>
-        <tr>
-            <td>budget.name</td>
-            <td>予算</td>
-        </tr>
-        <tr>
-            <td>genre.name</td>
-            <td>ジャンル</td>
-        </tr>
-        <tr>
-            <td>name</td>
-            <td>店舗名</td>
-        </tr>
-        <tr>
-            <td>open</td>
-            <td>営業時間</td>
-        </tr>
-        <tr>
-            <td>station_name</td>
-            <td>最寄り駅</td>
-        </tr>
-    </table>
-    <body>
+    <p><h2>都市のIDの取りうる値:</h2></p>
+    <p><h3>（検索したい都市に合わせて以下の番号を入力してください）</h3></p>
 
-        <p id="count"><span id = "aa"></span></p>
-        <div id="placeholder"></div>
-        <div id="aaa"></div>
+    <p>360630 ... Cairo カイロ （エジプト）</p>
+    <p>524901 ... Moscow モスクワ （ロシア）</p>
+    <p>993800 ... Johannesburg ヨハネスブルク （南アフリカ）</p>
+    <p>1816670 ... Beijing 北京 （中華人民共和国）</p>
+    <p>1850147 ... Tokyo 東京 （日本）</p>
+    <p>1880252 ... Singapore シンガポール</p>
+    <p>2147714 ... Sydney シドニー （オーストラリア）</p>
+    <p>2643743 ... London ロンドン （イギリス）</p>
+    <p>2968815 ... Paris パリ （フランス）</p>
+    <p>3451189 ... Rio de Janeiro リオデジャネイロ （ブラジル）</p>
+    <p>5128581 ... New York ニューヨーク （アメリカ合衆国）</p>
+    <p>5368361 ... Los Angeles ロサンゼルス （アメリカ合衆国）</p>
+    
+    <body>
+    <ul>
+     <h2>検索結果: </h2></p>
+    <li><h3>都市名</h3></li>
+    <p><span id = "t"></span></p>
+    <li><h3>緯度</h3></li>
+    <p><span id = "i"></span></p>
+    <li><h3>経度</h3></li>
+    <p><span id = "k"></span></p>
+    <li><h3>天気</h3></li>
+    <p><span id = "tk"></span></p>
+    <li><h3>最高気温</h3></li>
+    <p><span id = "max"></span></p>
+    <li><h3>最低気温</h3></li>
+    <p><span id = "min"></span></p>
+    <li><h3>湿度</h3></li>
+    <p><span id = "s"></span></p>
+    </ul>
     </body>
 </html>

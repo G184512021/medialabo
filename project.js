@@ -1,6 +1,3 @@
-
-  
-  /////////// 課題3-2 ここからプログラムを書こう
 let b = document.querySelector('#print');
 b.addEventListener('click', sendRequest);
 
@@ -15,7 +12,7 @@ function sendRequest() {
 	// URL を設定
 
 
-	let url = 'https://www.nishita-lab.org/web-contents/jsons/hotpepper/' + genre + '.json';
+	let url = 'https://www.nishita-lab.org/web-contents/jsons/openweather/'+genre+'.json';
 
 	// 通信開始
 	axios.get(url)
@@ -26,34 +23,33 @@ function sendRequest() {
 
 function showResult(resp) {
 	// サーバから送られてきたデータを出力
-  let count =0;
-	let data = resp.data;
-  let result = ("検索結果：");
-  let v = document.querySelector('span#aa');
-  v.textContent = result;
-  let dp = document.querySelector('div#placeholder');
-  let ddp = document.querySelector('div#aaa');
-  for(let n of data.results.shop){
-    count ++;
-    console.log(n.name);
-    p.textContent =(count+"店目: "+n.name);
-    let p = document.createElement('p');
-    let d = document.createElement('div');
-    d.insertAdjacentElement('beforeend', p);
-    dp.insertAdjacentElement('beforeend', d);
-    let pp = document.createElement('pp');
-    pp.textContent =("アクセス情報: "+n.access);
-    let dd = document.createElement('div');
-    dd.insertAdjacentElement('beforeend', pp);
-    ddp.insertAdjacentElement('beforeend', dd);
-  }
-	
+
+
+    let data = resp.data;
+    console.log(data);
+    let t = document.querySelector('span#t');
+    t.textContent = data.name;
+    let i =document.querySelector('span#i')
+    i.textContent= data.coord.lon+"度";
+    let k =document.querySelector('span#k')
+    k.textContent= data.coord.lat+"度";
+    let tk =document.querySelector('span#tk')
+    tk.textContent= data.weather.description;
+    let max =document.querySelector('span#max')
+    max.textContent= data.main.temp_max+"度";
+    let min =document.querySelector('span#min')
+    min.textContent= data.main.temp_min+"度";
+    let s =document.querySelector('span#s')
+    s.textContent= data.main.humidity+"パーセント";
+    
 }
 
 function showError(err) {
+    let s =document.querySelector('span#s');
+    s.textContent = "入力された数値に該当する都市はありません"
 	console.log(err);
 }	
 
 function finish() {
-	console.log('該当する店舗は以上です。');
+	console.log('終了');
 }

@@ -1,8 +1,11 @@
-p {
-    font-family: 'Helvetica neue', Arial, 'sans serif';
-    font-size: 20px;
-    margin: 20px;
-    height: 20px;
-    
-    padding: 50px;
-  }
+p{
+  color:black;
+}
+h1{
+  font-size: 2em;
+  margin: 25px;
+  height: 30px;
+  background: teal;
+  padding: 30px;
+  text-align: center;
+}
