@@ -23,6 +23,8 @@ function sendRequest() {
 
 function showResult(resp) {
 	// サーバから送られてきたデータを出力
+
+
     let data = resp.data;
     console.log(data);
     let t = document.querySelector('span#t');
@@ -39,6 +41,7 @@ function showResult(resp) {
     min.textContent= data.main.temp_min+"度";
     let s =document.querySelector('span#s')
     s.textContent= data.main.humidity+"パーセント";
+    
 }
 
 function showError(err) {
